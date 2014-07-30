@@ -12,10 +12,6 @@
 		// 	alert('ok')
 		// });
 
-		if($('#prefixo').value.length == 6){
-			alert('ok');
-		}
-
 		botao.click(function(e){
 			e.preventDefault();
 			$("h2").addClass('load');
@@ -27,10 +23,17 @@
 			var CEP = prefixo + sufixo;
 			CEP = CEP.replace("-", "");
 
-			if(CEP == ""){
-				$("h2").text("Preencha o campo CEP").removeClass('load');
-				$("p").text("");
-			}else{
+			if(prefixo == "" && sufixo == "" ){
+				$("h2").text("Preencha o campo prefixo e sufixo do CEP").removeClass('load');
+				
+			}else if(prefixo == "" ){
+				$("h2").text("Preencha o campo prefixo CEP").removeClass('load');
+				
+			}else if(sufixo == ""){
+				$("h2").text("Preencha o campo sufixo CEP").removeClass('load');
+				
+			}
+			else{
 
 				$.ajax({url:"http://cep.correiocontrol.com.br/"+CEP+".json",
 					success:function(retorno)
@@ -39,7 +42,7 @@
 						$("p").text(
 							retorno.logradouro + ", " + 
 							retorno.bairro + ", " + 
-							retorno.localidade + "- " + 
+							retorno.localidade + " - " + 
 							retorno.uf
 						);
 						$("h2").removeClass('load');

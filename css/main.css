@@ -3,18 +3,18 @@
 body{background: #E4E4E4}
 #header{width:100%;height: 142px;border-top:4px solid #26292D;background: #58B25A url(http://i.imgur.com/6PntbOr.png) bottom repeat-x}
 #header h1{margin:10px auto 0;font-family: 'Noto serif', serif;font-size: 55px;	text-align:center;color:#f5f5f5;letter-spacing: -3px;text-shadow:1px 1px 5px #26292D;}
-#main{width:100%;height:420px;background: #fff;}
+#main{width:100%;height:400px;background: #fff;}
 #main #app{height:325px;margin:0 auto;padding:30px 0;}
 #main #app h2,#main p{font-family: 'Noto serif', serif;color:#535453;text-align:center;}
 #main #app h2{height:40px;line-height:40px;font-size: 20px;margin:5px auto 0;}
-#main #app p{font-size: 15px;}
+#main #app p{margin: 0 10px;font-size: 15px;}
 #main #app .inputs{width:250px;margin:50px auto 25px;}
-#main #app .inputs input[type=text]{font-family: 'Noto serif', serif;font-size: 35px;	color:#6b6b6b; text-align:center;background-color: #f2f2f2; background: -webkit-linear-gradient(#f0f0f0, #f5f5f5); background: linear-gradient(#f0f0f0, #f5f5f5); -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; border-radius: 3px; border: 1px solid #d6d3ce; box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset; outline:none;}
-#main #app .inputs input[type=text]:focus{background:#F3F3F3;border-color:#63a62f;}
-#main #app .inputs input[type=text]:first-of-type{width: 140px;}
-#main #app .inputs input[type=text]:last-of-type{width: 95px;float:right;}
+#main #app .inputs input[type=text]{padding:5px 0;font-family: 'Noto serif', serif;font-size: 30px;	color:#6b6b6b;background-color: #f2f2f2; background: -webkit-linear-gradient(#f0f0f0, #f5f5f5); background: linear-gradient(#f0f0f0, #f5f5f5); -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; border-radius: 3px; border: 1px solid #d6d3ce; box-shadow: 0 0 3px rgba(0, 0, 0, 0.12) inset; outline:none;}
+#main #app .inputs input[type=text]:focus{border-color:#b0b0b0;background:#F3F3F3;/*box-shadow: 0 0 3px rgba(98,161,50,1) inset;*/}
+#main #app .inputs input[type=text]#prefixo{width: 143px;text-indent:22px;}
+#main #app .inputs input[type=text]#sufixo{width: 98px;float:right;text-indent:22px;}
 #main #app .inputs a{display:block;width:245px;height:33px;line-height:33px;margin:25px auto 0;font-size:16px;font-weight:600;text-transform:uppercase;text-align:center;text-decoration: none;}
-#copy{width:100%;padding:10px 0;text-align:center;font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;color: #838383;font-size: 14px;}
+#copy{margin:10px;text-align:center;font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;color: #838383;font-size: 14px;}
 #copy a{color:#58b25a;}
 #footer{width:100%;background: #ededed}
 /* cupid green (inspired by okcupid.com)
