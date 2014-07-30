@@ -3,86 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Search Cep</title>
-	<link rel="stylesheet" href="">
+	<title>Consulta CEP</title>
+	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif|Metrophobic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	
-<script>
+ 
+	<div id="wrap">
+	 	<div id="header"><h1>ConsultaCEP</h1></div>
 
-	$( document ).ready(function() {
-		console.log( "ready!" );
+		<div id="main">
+	 		<div id="app">
 
-		var botao = $('a').css({
-			"display": "block",
-			"width": "75px",
-			"text-align": "center",
-			"color": "white",
-			"background-color": "#6b6b6b",
-			"padding": "2px",
-			"border-radius": "5px",
-			"border": "1px  solid #4b4b4b",
-			"margin": "0 auto"
-		});
+	 			<div class="inputs clearfix">
+	 				<input type="text" id="prefixo" name="" value="" maxlength="6" placeholder="">
+	 				<input type="text" id="sufixo" name="" value="" maxlength="3" placeholder="">
+	 				<a class="cupid-green" href="" title="">Buscar</a>
+	 			</div>
 
-		var CEP;
-		var intRegex = /\D/;
+	 			<h2></h2>
+	 			<p></p>
 
-		botao.click(function(e){
-			e.preventDefault();
-
-			CEP = $('#CEP').val();
-			CEP2 = $('#CEP2').val();
-
-			CEP = CEP + CEP2;
-
-			CEP = CEP.replace("-", "");
-
-			if(CEP == ""){
-				$("strong").text("Preencha o campo CEP");
-				$("p").text("");
-			}
-
-			// else if(CEP.value.match(intRegex)){
-			// 	$("strong").text("só números");
-			// }
-
-			else{
-
-				$.ajax({url:"http://cep.correiocontrol.com.br/"+CEP+".json",
-					success:function(retorno)
-					{	
-						$("strong").text(CEP);
-						$("p").text(
-							retorno.logradouro + ", " + 
-							retorno.bairro + ", " + 
-							retorno.localidade + ", " + 
-							retorno.uf
-						);
-					},
-					error:function(error){
-						$('strong').text("Cep inexistente");
-						$("p").text("");
-					}
-				});
-
-			}
-
-		});
-	});
-
-</script>	
-
-	<div style="width:350px;margin:50px auto;">
-		<div style="width:120px;margin:0 auto;">
-			<input type="text" id="CEP" name="" value="" placeholder="" style="display:inline-block;width:75px;padding:3px;margin:10px auto;text-align:center;border-radius:5px;border:1px  solid #4b4b4b;">
-			<input type="text" id="CEP2" name="" value="" placeholder="" style="display:inline-block;width:25px;padding:3px;margin:10px auto;text-align:center;border-radius:5px;border:1px  solid #4b4b4b;">
-		</div>
-		<a href="" title="">Buscar</a>
-		<strong style="display:block;text-align:center;margin:50px auto 5px;"></strong>
-		<p style="text-align:center;margin:0 auto;"></p>
-	</div>
-
+	 		</div>
+		</div>	
+		<div id="copy">ConsultaCep -  Powered width jQuery and Json by <a href="" title="">Thiago Canudo</a></div> 
+	</div>	 
+	<div id="footer"></div>	
+	<script src="js/home.js" type="text/javascript"></script>
 </body>
 </html>
