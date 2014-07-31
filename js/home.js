@@ -1,10 +1,9 @@
 	$(document).ready(function() {
 		$('#prefixo').focus();
-		var botao = $('a');
-		var prefixo;
-		var intRegex = /\D/;
+		var botao = $('a#btConsulta');
+		
 
-
+		//var intRegex = /\D/;
 		// $('#prefixo').keypress(function(event) {
 		// 	if(	$('#prefixo').length == 6){
 		// 		$('#sufixo').focus();
