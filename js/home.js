@@ -27,6 +27,7 @@
 				$("h2").text("Digite o sufixo  doCEP").removeClass('load');
 			}
 			else{
+				//http://cep.republicavirtual.com.br/web_cep.php?formato=xml&cep=24310340
 				$.ajax({url:"http://cep.correiocontrol.com.br/"+ prefixo + sufixo +".json",
 					success:function(retorno)
 					{	
