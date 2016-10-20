@@ -41,7 +41,7 @@
 						h2.removeClass('load');
 					},
 					error:function(error){
-						h2.text("Cep inexistente");
+						h2.text("Os Correios descontinuaram o webservice que fazia o ConsultaCep funcionar :( ");
 						p.text("");
 						h2.removeClass('load');
 					}
