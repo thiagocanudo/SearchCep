@@ -1,6 +1,7 @@
-# Ignorar arquivos específicos
+﻿# Ignorar arquivos específicos
 *.DS_Store
 .DS_Store
 
 # Ignorar todos os diretórios e arquivos
 infra/**/* 
+_ignorar/**/*
