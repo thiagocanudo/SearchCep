@@ -3,4 +3,4 @@ SearchCep
 
 Busca de CEPs com Jquery e JSon
 
-* Homepage: [http://thiagocanudo.com.br/consultacep](http://thiagocanudo.com.br/consultacep)
+* Homepage: [http://thiagocanudo.github.io/SearchCep/](http://thiagocanudo.github.io/SearchCep/)
