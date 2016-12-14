@@ -7,7 +7,7 @@ $('document').ready(function(){
   var $cep = $('#cep').val();
     $resposta.addClass('load').text('');
     $.getJSON("http://cep.republicavirtual.com.br/web_cep.php?cep=" + $cep + "&formato=json", {}, function(data) {
-      if (data.resultado_txt == 'sucesso - cep completo') {
+      if (data.resultado == '1' || data.resultado == '2') {
         $resposta.text(data.tipo_logradouro + ' ' + data.logradouro + ', ' + data.bairro + ', ' + data.cidade + ' - ' + data.uf);
         $resposta.removeClass('load');
       }else{
