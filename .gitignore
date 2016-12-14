@@ -4,4 +4,4 @@
 
 # Ignorar todos os diretórios e arquivos
 infra/**/* 
-_ignorar/**/*
+css/main.css.map
