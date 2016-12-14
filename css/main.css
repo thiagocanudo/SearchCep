@@ -444,7 +444,7 @@ body {
     padding: 30px 0; }
     #main #app h2 {
       height: 40px;
-      line-height: 40px;
+      line-height: 25px;
       font-size: 18px; }
     #main #app h2.load {
       background: url(../images/load.gif?d) center no-repeat; }
